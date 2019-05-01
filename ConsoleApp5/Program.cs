@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp5
 {
-    public class hw1
+    class Program
     {
-        public void Sort()
+        static void Main(String[] args)
         {
-            Console.Write("Input X : "); //輸入兩數字做加總
-            int c = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Input Y : ");
-            int d = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("X + Y ={0}", c + d);
-            Console.WriteLine();
+            switch (Console.ReadLine().ToString())
+            {
+                case "7":
+                    var x = new hw7();
+                    x.Sort();
+                    break;
+            }
         }
     }
 }
-
